@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "352596293567",
+    "project_id": "my-tshirt-c8f27",
+    "storage_bucket": "my-tshirt-c8f27.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:352596293567:android:83e5a41ebcba689091930a",
+        "android_client_info": {
+          "package_name": "com.mytshirt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA88EvqqCg05_CStzNsxd3HkQ2oRJgQjgk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
