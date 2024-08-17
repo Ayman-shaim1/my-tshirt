@@ -3,11 +3,11 @@ import React from "react";
 import colors from "../config/colors";
 import Label from "./Label";
 
-export default function Button({ text, color = "primary", onPress }) {
+export default function Button({ style, text, color = "primary", onPress }) {
   return (
     <TouchableOpacity
       onPress={onPress}
-      style={[styles.button, { backgroundColor: colors[color] }]}
+      style={[styles.button, {...style}, { backgroundColor: colors[color] }]}
     >
       <Label style={styles.buttonText} text={text} />
     </TouchableOpacity>

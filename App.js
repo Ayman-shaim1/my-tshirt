@@ -1,15 +1,12 @@
 import DefaultLayout from "./src/layouts/DefaultLayout";
-
+import { Provider } from "react-redux";
+import store from "./src/redux/store";
 
 export default function App() {
-  return <DefaultLayout />;
+  return (
+    <Provider store={store}>
+      <DefaultLayout />
+    </Provider>
+  );
 }
 
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: "#fff",
-//     alignItems: "center",
-//     justifyContent: "center",
-//   },
-// });

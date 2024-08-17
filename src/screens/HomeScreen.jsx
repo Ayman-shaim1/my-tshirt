@@ -32,7 +32,7 @@ export default function HomeScreen({ navigation }) {
           <Label text={"no products !"} />
         </View>
       )}
-      <Heading as="heading5" text={"Best sellers"} />
+      <Heading as="heading5" text={"Lorem ipsum dolor "} />
       <View style={styles.vhomeInfo}>
         <TouchableOpacity
           onPress={() => navigation.navigate("Products")}
@@ -49,19 +49,18 @@ export default function HomeScreen({ navigation }) {
             }
           />
         </TouchableOpacity>
-
         <TouchableOpacity
           onPress={() => navigation.navigate("Products")}
           style={styles.vhomeItem}
         >
           <Image
             style={styles.vhomeImage}
-            source={require("../assets/images/acc_cd2.png")}
+            source={require("../assets/images/acc_cd3.png")}
           />
           <Label
             style={styles.vhomeText}
             text={
-              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam optio illo "
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam optio."
             }
           />
         </TouchableOpacity>
@@ -71,8 +70,14 @@ export default function HomeScreen({ navigation }) {
 }
 
 const styles = StyleSheet.create({
-  vhomeInfo: { flexDirection: "row", marginTop: 30, marginBottom: 100 },
-  vhomeItem: { marginHorizontal: 10, width: 180, height: 180 },
+  vhomeInfo: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    marginTop: 10,
+    marginBottom: 40,
+    marginBottom: 100,
+  },
+  vhomeItem: { marginHorizontal: 0, width: 180, height: 180 },
   vhomeImage: { borderRadius: 10, width: "100%", height: "100%" },
   vhomeText: { textAlign: "justify", fontSize: 12 },
 });

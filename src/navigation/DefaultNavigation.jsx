@@ -1,11 +1,9 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet } from "react-native";
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import HomeScreen from "../screens/HomeScreen";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import colors from "../config/colors";
-import ProductsScreen from "../screens/ProductsScreen";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import HomeScreenNavigation from "./HomeScreenNavigation";
 import ProductsScreenNavigation from "./ProductsScreenNavigation";
@@ -24,7 +22,7 @@ export default function DefaultNavigation() {
               <MaterialCommunityIcons
                 name={`${focused ? "home" : "home-outline"}`}
                 color={colors.primary}
-                size={34}
+                size={30}
               />
             ),
             tabBarLabelStyle: {
@@ -41,7 +39,7 @@ export default function DefaultNavigation() {
               <Ionicons
                 name={`${focused ? "shirt" : "shirt-outline"}`}
                 color={colors.primary}
-                size={26}
+                size={24}
               />
             ),
             tabBarLabelStyle: {

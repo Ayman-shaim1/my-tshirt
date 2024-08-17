@@ -7,7 +7,7 @@ export default function Product({ product }) {
   const navigation = useNavigation();
   return (
     <TouchableOpacity
-      onPress={() => navigation.navigate("ProductDetails")}
+      onPress={() => navigation.navigate("ProductDetails", { product })}
       style={styles.productContainer}
     >
       <Image style={styles.productImage} source={{ uri: product.image }} />
