@@ -6,6 +6,8 @@ import Banner from "./Banner";
 import Button from "./Button";
 import Header from "./Header";
 import GoBackButton from "./GoBackButton";
+import CartItem from "./CartItem";
+
 
 export {
   Screen,
@@ -16,4 +18,5 @@ export {
   Button,
   Header,
   GoBackButton,
+  CartItem
 };

@@ -4,9 +4,11 @@ import FontAwesome6 from "@expo/vector-icons/FontAwesome6";
 import Heading from "./Heading";
 import colors from "../config/colors";
 import { useNavigation } from "@react-navigation/native";
+import { useSelector } from "react-redux";
 
 export default function Header({ text }) {
   const navigation = useNavigation();
+  const products = useSelector((state) => state.cart.products);
   return (
     <View style={styles.header}>
       <Heading as="heading4" text={text} />
@@ -14,7 +16,9 @@ export default function Header({ text }) {
         style={styles.cart}
         onPress={() => navigation.navigate("Cart")}
       >
-        <Text style={styles.cartNbr}>1</Text>
+        {products.length > 0 && (
+          <Text style={styles.cartNbr}>{products.length}</Text>
+        )}
         <FontAwesome6 name="bag-shopping" size={30} color="black" />
       </TouchableOpacity>
     </View>
